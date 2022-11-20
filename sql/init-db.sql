@@ -1,7 +1,9 @@
-CREATE TABLE questions
+CREATE DATABASE IF NOT EXISTS dev;
+USE dev;
+CREATE TABLE question
 (
   id   SERIAL NOT NULL,
-  text varchar NOT NULL
+  text varchar NOT NULL UNIQUE
 );
-INSERT INTO questions(text) VALUES ('Часто ли Вы чувствуете тягу к новым впечатлениям, чтобы отвлечься, испытать сильные ощущения?');
-INSERT INTO questions(text) VALUES ('Часто ли Вы чувствуете, что нуждаетесь в друзьях, которые могут Вас понять, выразить сочувствие?');
+INSERT INTO question(text) VALUES ('Часто ли1');
+INSERT INTO question(text) VALUES ('Часто ли2');
